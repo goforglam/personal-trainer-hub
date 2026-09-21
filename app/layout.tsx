@@ -8,13 +8,12 @@ export const metadata: Metadata = {
 };
 
 const nav = [
-  ["⌂", "Dashboard", "/"],
-  ["♙", "Clients", "/clients"],
-  ["◫", "Programs", "/programs"],
-  ["◷", "Sessions", "/sessions"],
+  ["⌂", "Today", "/"],
+  ["◉", "Group Fitness", "/group-fitness"],
+  ["♙", "Personal Training", "/personal-training"],
   ["◇", "Exercises", "/exercises"],
-  ["↗", "Progress", "/progress"],
   ["✦", "Method", "/method"],
+  ["↗", "Business", "/business"],
 ];
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
@@ -45,7 +44,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
                 <div className="eyebrow">Personal Trainer Hub</div>
                 <div className="page-title">Trainer workspace</div>
               </div>
-              <div className="pill">Methodology-led · v0.1</div>
+              <div className="pill">Methodology-led · v0.2</div>
             </header>
             {children}
           </main>
